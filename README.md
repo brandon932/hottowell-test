@@ -64,11 +64,11 @@ The app has 4 feature modules and depends on a series of external modules and cu
 
 ```
 app --> [
-        app.admin --> [
+        app.features.admin --> [
             app.core,
             app.widgets
         ],
-        app.dashboard --> [
+        app.features.dashboard --> [
             app.core,
             app.widgets
         ],
