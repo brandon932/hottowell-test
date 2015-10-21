@@ -34,13 +34,13 @@ describe('DashboardController', function() {
                 expect(controller.news).to.not.be.empty;
             });
 
-            it('should have at least 1 person', function () {
-                expect(controller.people).to.have.length.above(0);
-            });
+            // it('should have at least 1 person', function () {
+            //     expect(controller.people).to.have.length.above(0);
+            // });
 
-            it('should have people count of 5', function () {
-                expect(controller.people).to.have.length(7);
-            });
+            // it('should have people count of 5', function () {
+            //     expect(controller.people).to.have.length(7);
+            // });
         });
     });
 });

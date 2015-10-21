@@ -5,7 +5,8 @@
         'app.core',
         'app.widgets',
         'app.layout',
-        'app.features'
+        'app.features',
+        'app.components'
     ]);
 
 })();
