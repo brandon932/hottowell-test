@@ -13,5 +13,25 @@
             title: 'helloWorld',
             description: 'Hot Towel Angular is a SPA template for Angular developers.'
         };
+        // vm.messageCount = 0;
+        // vm.title = 'Dashboard';
+        //
+        // activate();
+        //
+        //
+        // function activate() {
+        //     var promises = [getMessageCount()];
+        //     return $q.all(promises).then(function() {
+        //         logger.info('Activated Dashboard View');
+        //     });
+        // }
+        //
+        // function getMessageCount() {
+        //     return dataservice.getMessageCount().then(function (data) {
+        //         vm.messageCount = data;
+        //         return vm.messageCount;
+        //     });
+        // }
+
     }
 })();

@@ -12,13 +12,13 @@
             controller: PeopleGridController,
             controllerAs: 'vm',
             bindToController: true
-            
+
         };
     }
 
     PeopleGridController.$inject = ['logger', 'dataservice'];
 
-    function PeopleGridController(logger, dataservice){
+    function PeopleGridController(logger, dataservice) {
         var vm = this;
         vm.people = [];
 
@@ -32,10 +32,9 @@
             return dataservice.getPeople()
             .then(function (data) {
                 vm.people = data;
-                logger.info('Activated Dashboard View');
+                logger.info('Activated People View');
                 return vm.people;
             });
         }
     }
-
 }());

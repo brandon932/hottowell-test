@@ -1,5 +1,4 @@
 (function() {
     'use strict';
-        angular.module('app.components.messages', []);
-
+    angular.module('app.components.messages', []);
 }());

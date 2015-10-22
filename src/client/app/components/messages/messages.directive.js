@@ -17,7 +17,7 @@
 
     MessagesController.$inject = ['dataservice', 'logger'];
 
-    function MessagesController(dataservice, logger){
+    function MessagesController(dataservice, logger) {
         var vm = this;
         vm.messageCount = 0;
 
@@ -35,6 +35,5 @@
                 return vm.messageCount;
             });
         }
-
     }
 }());

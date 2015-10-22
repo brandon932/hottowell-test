@@ -17,8 +17,8 @@
             bindToController: true,
             transclude: true
         };
-        function ContainerController(){
-            
+        function ContainerController() {
+
             var vm = this;
 
             vm.wColor = 'w' + vm.color;

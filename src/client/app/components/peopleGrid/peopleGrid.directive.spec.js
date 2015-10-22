@@ -2,12 +2,12 @@
 (function() {
     'use strict';
 
-    describe('Directive: peopleGrid', function(){
+    describe('Directive: peopleGrid', function() {
         var element,
         vm,
         people = mockData.getMockPeople();
 
-        beforeEach(function(){
+        beforeEach(function() {
             bard.appModule('app.components.peopleGrid');
             bard.inject(
                 '$q',
@@ -21,10 +21,10 @@
             sinon.stub(dataservice, 'getPeople').returns($q.when(people));
         });
 
-        beforeEach(function(){
+        beforeEach(function() {
             var html = angular.element('<gs-people-grid></gs-people-grid>');
 
-            $rootScope =$rootScope.$new();
+            $rootScope = $rootScope.$new();
             $templateCache.put('app/components/peopleGrid/peopleGrid.html', '');
             element = $compile(html)($rootScope);
 
@@ -35,13 +35,13 @@
 
         bard.verifyNoOutstandingHttpRequests();
 
-        it('is able to be created', function(){
+        it('is able to be created', function() {
             expect(element).to.be.defined;
             expect(vm).to.be.defined;
         });
         describe('after activate', function() {
 
-            beforeEach(function(){
+            beforeEach(function() {
                 vm.activate();
                 $rootScope.$apply();
             });
@@ -59,6 +59,4 @@
             });
         });
     });
-
-
 })();
